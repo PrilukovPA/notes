@@ -55,6 +55,7 @@
             <p><sub><fmt:formatDate value="${note.creationDate}" pattern="dd MMMM HH:mm" /></sub></p>
             <p><c:out value="${note.body}" /></p>
             <a class="btn btn-default" role="button" href="<c:url value="/delete"><c:param name="noteid" value="${note.id}"/>${note.id}</c:url>">Удалить</a>
+            <a class="btn btn-default" role="button" href="<c:url value="/" />">Отмена</a>
           <hr>
           <footer>
           </footer>

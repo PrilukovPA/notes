@@ -66,11 +66,11 @@
                               <h2><c:out value="${note.header}" /></h2>
                           </c:when>
                           <c:otherwise>
-                            <h2><c:out value="${fn:substring(note.body, 0, 50)}..." /></h2>
+                            <h2><c:out value="${fn:substring(note.body, 0, 50)}" /></h2>
                           </c:otherwise>
                       </c:choose>
                       <p><sub><fmt:formatDate value="${note.creationDate}" pattern="dd MMMM HH:mm" /></sub></p>
-                      <p><c:out value="${fn:substring(note.body, 0, 200)}..." /></p>
+                      <p><c:out value="${fn:substring(note.body, 0, 200)}" /></p>
                       <a class="btn btn-default" role="button" href="<c:url value="/show"><c:param name="noteid" value="${note.id}"/>${note.id}</c:url>">Просмотр</a>
                       <a class="btn btn-default" role="button" href="<c:url value="/delete"><c:param name="noteid" value="${note.id}"/>${note.id}</c:url>">Удалить</a>
                   </div>
